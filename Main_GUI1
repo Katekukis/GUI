@@ -1,0 +1,18 @@
+package praktika_7;
+import java.awt.*;
+import javax.swing.*;
+
+public class Main_GUI {
+    public static void main (String[] args){
+        JFrame frame = new JFrame("Window");
+        frame.getDefaultCloseOperation();
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.GREEN);
+        panel.setPreferredSize(new Dimension(250, 100));
+        JLabel label = new JLabel("Hello World");
+        panel.add(label);
+        frame.getContentPane().add(panel);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
